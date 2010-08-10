@@ -1,7 +1,8 @@
+%define 	module	offtrac
 Summary:	Trac xmlrpc library
-Name:		python-offtrac
+Name:		python-%{module}
 Version:	0.0.3
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Development/Languages
 URL:		http://fedorahosted.org/offtrac
@@ -10,7 +11,7 @@ URL:		http://fedorahosted.org/offtrac
 # cd offtrac
 # git checkout -b tarball %{version}
 # python setup.py sdist --formats=bztar
-Source0:	offtrac-%{version}.tar.bz2
+Source0:	%{module}-%{version}.tar.bz2
 # Source0-md5:	3e4cdcbf50ba492b93748d2e08cbbc9c
 BuildRequires:	python-devel
 Requires:	python-modules
@@ -22,7 +23,7 @@ There is the offtrac Python library which offers the TracServer class.
 This object is how one interacts with a Trac instance via xmlrpc.
 
 %prep
-%setup -q -n offtrac-%{version}
+%setup -q -n %{module}-%{version}
 
 %build
 %{__python} setup.py build
