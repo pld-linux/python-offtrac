@@ -2,7 +2,7 @@
 Summary:	Trac xmlrpc library
 Name:		python-%{module}
 Version:	0.0.3
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Development/Languages
 URL:		http://fedorahosted.org/offtrac
@@ -43,6 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
+%dir %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{module}/*.py[co]
 %if "%{py_ver}" > "2.4"
 %{py_sitescriptdir}/%{module}-%{version}*.egg-info
