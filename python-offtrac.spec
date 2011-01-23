@@ -14,6 +14,8 @@ URL:		http://fedorahosted.org/offtrac
 Source0:	%{module}-%{version}.tar.bz2
 # Source0-md5:	3e4cdcbf50ba492b93748d2e08cbbc9c
 BuildRequires:	python-devel
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 Requires:	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
