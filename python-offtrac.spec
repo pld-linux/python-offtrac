@@ -2,7 +2,7 @@
 Summary:	Trac xmlrpc library
 Name:		python-%{module}
 Version:	0.0.3
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		Development/Languages
 URL:		http://fedorahosted.org/offtrac
