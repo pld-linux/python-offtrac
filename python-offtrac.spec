@@ -6,6 +6,7 @@ Release:	4
 License:	GPL v2+
 Group:		Development/Languages
 URL:		http://fedorahosted.org/offtrac
+BuildRequires:	rpmbuild(macros) >= 1.710
 # No tarballs are made, generate them from scm
 # git clone git://git.fedorahosted.org/git/offtrac
 # cd offtrac
